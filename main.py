@@ -17,7 +17,7 @@ user_agent = "en-GB,en-US;q=0.9,en;q=0.8"
 accept_language = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
 
 headers = { 'Accept-Language' : accept_language,
-            'User-Agent': user_agent}
+            'User-Agent': user_agent }
 
 response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.content, "lxml")
